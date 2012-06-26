@@ -20,7 +20,7 @@ for (var u=0; u < 2; u++) {
 };
 
 setTimeout(function() {
-	var scraper = require('scraper');
+	var scraper = require('../lib/scraper');
 	scraper(urls, function(err, $) {
 		if (err) {
 			console.log(err);

@@ -1,4 +1,4 @@
-var scraper = require('scraper');
+var scraper = require('../lib/scraper');
 
 scraper([
 		'http://search.twitter.com/search?q=javascript'

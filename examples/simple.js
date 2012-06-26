@@ -1,9 +1,9 @@
-var scraper = require('scraper');
+var scraper = require('../lib/scraper');
 
-scraper('http://search.twitter.com/search?q=javascript', function(err, $) {
+scraper('http://www.w3schools.com/jsref/jsref_replace.asp', function(err, $, a, b) {
 	if (err) {throw err;}
 
-	$('.msg').each(function() {
-		console.log($(this).text().trim()+'\n');
-	});
+	$('p').each(function( i, o) {
+		console.log( $(o).html()+'\n');
+    });
 });
